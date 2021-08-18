@@ -1,6 +1,6 @@
 package krisanthe.task.barcodescanner.database
 
-import krisanthe.task.barcodescanner.api.safeApiCall
+import krisanthe.task.barcodescanner.common.safeApiCall
 import krisanthe.task.barcodescanner.common.toEntity
 import krisanthe.task.barcodescanner.common.toItems
 import krisanthe.task.barcodescanner.model.Item

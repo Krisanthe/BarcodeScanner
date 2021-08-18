@@ -1,8 +1,6 @@
 package krisanthe.task.barcodescanner.api
 
-import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
+import krisanthe.task.barcodescanner.common.safeApiCall
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -17,16 +15,3 @@ class ProductTransaction @Inject constructor(
         }
     }
 }
-
-suspend fun <T> safeApiCall(
-    dispatcher: CoroutineDispatcher = Dispatchers.IO,
-    apiCall: suspend () -> T
-): T? =
-    withContext(dispatcher) {
-        try {
-            apiCall()
-        } catch (e: Exception) {
-            e.printStackTrace()
-            null
-        }
-    }
