@@ -5,7 +5,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class ProductTransaction @Inject constructor(
+class ProductNameUseCase @Inject constructor(
     private val productApi: ProductApi,
 ) {
 

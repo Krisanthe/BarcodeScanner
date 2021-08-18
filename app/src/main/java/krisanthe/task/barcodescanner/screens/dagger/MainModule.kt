@@ -2,7 +2,7 @@ package krisanthe.task.barcodescanner.screens.dagger
 
 import dagger.Module
 import dagger.Provides
-import krisanthe.task.barcodescanner.api.ProductTransaction
+import krisanthe.task.barcodescanner.api.ProductNameUseCase
 import krisanthe.task.barcodescanner.common.viewModel
 import krisanthe.task.barcodescanner.database.DatabaseAccess
 import krisanthe.task.barcodescanner.screens.MainActivity
@@ -17,8 +17,8 @@ class MainModule(
     @MainScope
     fun provideViewModel(
         databaseAccess: DatabaseAccess,
-        productTransaction: ProductTransaction,
+        productNameUseCase: ProductNameUseCase,
     ): MainViewModel = activity.viewModel {
-        MainViewModel(databaseAccess, productTransaction)
+        MainViewModel(databaseAccess, productNameUseCase)
     }
 }

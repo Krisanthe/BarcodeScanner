@@ -1,7 +1,7 @@
 package krisanthe.task.barcodescanner.dagger
 
 import dagger.Component
-import krisanthe.task.barcodescanner.api.ProductTransaction
+import krisanthe.task.barcodescanner.api.ProductNameUseCase
 import krisanthe.task.barcodescanner.database.DatabaseAccess
 import javax.inject.Singleton
 
@@ -16,5 +16,5 @@ import javax.inject.Singleton
 interface AppComponent {
 
     val databaseAccess: DatabaseAccess
-    val productTransaction: ProductTransaction
+    val productNameUseCase: ProductNameUseCase
 }
