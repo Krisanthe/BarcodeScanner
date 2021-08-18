@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
         initComponent()
         initViews()
         checkPermission()
-        initRecyclerView()
         updateAdapter()
     }
 
@@ -67,6 +66,7 @@ class MainActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
     private fun initViews() {
         scannerView = findViewById(R.id.scanner_view)
         recyclerView = findViewById(R.id.recycler_view)
+        initRecyclerView()
     }
 
     private fun checkPermission() {

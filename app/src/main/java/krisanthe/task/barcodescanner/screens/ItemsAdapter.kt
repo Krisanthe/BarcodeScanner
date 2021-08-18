@@ -15,7 +15,7 @@ import krisanthe.task.barcodescanner.model.Item
 
 class ItemsAdapter : RecyclerView.Adapter<BaseViewHolder<*>>() {
 
-    val items: ArrayList<AdapterData<Any>> = ArrayList()
+    private val items: ArrayList<AdapterData<Any>> = ArrayList()
 
     override fun getItemCount(): Int = items.size
 
