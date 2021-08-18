@@ -8,6 +8,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import krisanthe.task.barcodescanner.R
+import krisanthe.task.barcodescanner.common.AdapterData
 import krisanthe.task.barcodescanner.common.BaseViewHolder
 import krisanthe.task.barcodescanner.common.UDate
 import krisanthe.task.barcodescanner.model.Item

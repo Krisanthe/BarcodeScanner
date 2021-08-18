@@ -1,4 +1,4 @@
-package krisanthe.task.barcodescanner.screens
+package krisanthe.task.barcodescanner.common
 
 class AdapterData<out T>(
     val viewType: Int,
